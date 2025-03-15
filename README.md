@@ -1,20 +1,23 @@
-📌 Code Books Repository
+# 📌 Code Books Repository  
 
-A collection of coding patterns, problem-solving approaches, and quick reference guides to help improve problem-solving skills and write optimized code.
-📂 Repository Structure
+A collection of coding patterns, problem-solving approaches, and quick reference guides to help improve problem-solving skills and write optimized code.  
 
-    📁 patterns/ → Common coding patterns like sliding window, two pointers, recursion, etc.
-    📁 approaches/ → Problem-solving techniques like divide & conquer, dynamic programming, and greedy algorithms.
-    📁 quick-references/ → Short guides on essential topics like time complexity, JavaScript tricks, and algorithm templates.
+## 📂 Repository Structure  
 
-🚀 How to Use
+📁 **patterns/** → Common coding patterns like sliding window, two pointers, recursion, etc.  
+📁 **approaches/** → Problem-solving techniques like divide & conquer, dynamic programming, and greedy algorithms.  
+📁 **quick-references/** → Short guides on essential topics like time complexity, JavaScript tricks, and algorithm templates.  
 
-    Understand the Concept: Read through explanations and examples.
-    Practice: Implement problems using the given techniques.
-    Review & Optimize: Compare different approaches and improve efficiency.
+## 🚀 How to Use  
 
-🔹 Why This Repository?
+1️⃣ **Understand the Concept** → Read through explanations and examples.  
+2️⃣ **Practice** → Implement problems using the given techniques.  
+3️⃣ **Review & Optimize** → Compare different approaches and improve efficiency.  
 
-✔ Systematic Learning: Step-by-step approach to problem-solving.
-✔ Efficient Coding: Learn optimized solutions to common problems.
-✔ Interview Prep: Strengthen concepts for coding interviews.
+## 🔹 Why This Repository?  
+
+✔ **Systematic Learning** → Step-by-step approach to problem-solving.  
+✔ **Efficient Coding** → Learn optimized solutions to common problems.  
+✔ **Interview Prep** → Strengthen concepts for coding interviews.  
+
+---
