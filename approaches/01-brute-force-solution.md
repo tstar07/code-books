@@ -32,7 +32,3 @@ console.log(productExceptSelf([1, 2, 3, 4])); // Output: [24, 12, 8, 6]
 - We are using **two loops**, so the **time complexity is O(n²)** (slow for large inputs).  
 - It works but is **not efficient**.  
 
-### **Next Steps (When You're Ready)**
-1️⃣ **Analyze how it works manually (write down steps for [1,2,3,4]).**  
-2️⃣ **Find why it's inefficient (nested loops, repeated calculations).**  
-3️⃣ **Think: Can we store intermediate results to remove the second loop?**  

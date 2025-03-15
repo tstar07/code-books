@@ -275,6 +275,3 @@ For **sum, product, min, max, etc.**, the **left-right approach** helps:
 ✔ Reduce nested loops (**O(n²) → O(n) complexity**)  
 ✔ Avoid using extra space (**O(1) auxiliary space**)  
 ✔ Simplify prefix & suffix-based problems  
-
-Whenever you need to **combine left-side and right-side values**, think about using **left-right traversal**! 🚀  
-

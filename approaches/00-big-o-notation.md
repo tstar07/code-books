@@ -1,48 +1,49 @@
+# **📌 Big-O Notation Guide**  
 
-### **What is Big-O Notation?**  
 Big-O notation helps us **measure how efficient** an algorithm is in terms of **time** and **space** as the input size grows.  
 
-#### **Common Big-O Complexities**  
-✅ **O(1) → Constant Time**  
-✅ **O(n) → Linear Time**  
-✅ **O(n²) → Quadratic Time**  
-✅ **O(log n) → Logarithmic Time**  
-✅ **O(n log n) → Linearithmic Time**  
+---
 
-Here’s the ascending order of time complexity (from best to worst):
-Complexity	Name	Example	Performance
-O(1)	Constant Time	Accessing arr[i]	✅ Fastest
-O(log n)	Logarithmic Time	Binary Search	🔥 Very Fast
-O(n)	Linear Time	Looping through an array	⚡ Good
-O(n log n)	Linearithmic Time	Merge Sort, Quick Sort	🔄 Efficient
-O(n²)	Quadratic Time	Nested loops (Brute force)	🐢 Slow
-O(2ⁿ)	Exponential Time	Fibonacci (Recursive)	🛑 Very Slow
-O(n!)	Factorial Time	Traveling Salesman Problem	❌ Worst
+## **📝 Common Big-O Complexities**  
 
-🚀 Key Takeaways:
-1️⃣ Lower complexity = Faster execution ✅
-2️⃣ O(1) and O(log n) are the best for efficiency 💡
-3️⃣ O(n²), O(2ⁿ), and O(n!) should be avoided when possible 🚫
+| Complexity | Name | Example | Performance |
+|------------|-----------------|--------------------|--------------|
+| **O(1)** | Constant Time | Accessing `arr[i]` | ✅ Fastest |
+| **O(log n)** | Logarithmic Time | Binary Search | 🔥 Very Fast |
+| **O(n)** | Linear Time | Looping through an array | ⚡ Good |
+| **O(n log n)** | Linearithmic Time | Merge Sort, Quick Sort | 🔄 Efficient |
+| **O(n²)** | Quadratic Time | Nested loops (Brute force) | 🐢 Slow |
+| **O(2ⁿ)** | Exponential Time | Fibonacci (Recursive) | 🛑 Very Slow |
+| **O(n!)** | Factorial Time | Traveling Salesman Problem | ❌ Worst |
+
+---
+
+## **🚀 Key Takeaways**  
+
+1️⃣ **Lower complexity = Faster execution** ✅  
+2️⃣ **O(1) and O(log n) are best for efficiency** 💡  
+3️⃣ **O(n²), O(2ⁿ), and O(n!) should be avoided** 🚫  
+
 ---
 
 ## **Understanding Common Complexities**  
 
-### **1️⃣ O(1) - Constant Time**
-- The execution time **does not change** with input size.
-- It takes the **same amount of time**, no matter how large the input is.
+### **1️⃣ O(1) - Constant Time**  
+- The execution time **does not change** with input size.  
+- Takes the **same amount of time**, no matter how large the input is.  
 
 ✅ **Example: Accessing an array element by index**  
 ```js
 let arr = [10, 20, 30, 40];
 console.log(arr[2]); // Always takes the same time O(1)
 ```
-**Reason:** No loops, just direct access.
+**Reason:** No loops, just direct access.  
 
 ---
 
-### **2️⃣ O(n) - Linear Time**
-- The time taken **grows linearly** with the input size.
-- If `n` increases, execution time increases **proportionally**.
+### **2️⃣ O(n) - Linear Time**  
+- The time taken **grows linearly** with the input size.  
+- If `n` increases, execution time increases **proportionally**.  
 
 ✅ **Example: Looping through an array**  
 ```js
@@ -51,13 +52,13 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]); // Runs 'n' times → O(n)
 }
 ```
-**Reason:** If `n = 100`, the loop runs 100 times.
+**Reason:** If `n = 100`, the loop runs 100 times.  
 
 ---
 
-### **3️⃣ O(n²) - Quadratic Time**
-- If the input size doubles, the execution time **increases quadratically**.
-- Usually occurs with **nested loops**.
+### **3️⃣ O(n²) - Quadratic Time**  
+- If the input size doubles, the execution time **increases quadratically**.  
+- Usually occurs with **nested loops**.  
 
 ✅ **Example: Nested loops (pairing elements in an array)**  
 ```js
@@ -68,15 +69,15 @@ for (let i = 0; i < arr.length; i++) {
   }
 }
 ```
-**Reason:** If `n = 3`, the loop runs `3 × 3 = 9` times.
+**Reason:** If `n = 3`, the loop runs `3 × 3 = 9` times.  
 
 ---
 
-### **4️⃣ O(log n) - Logarithmic Time**
-- The input size reduces **exponentially** in each step.
-- Mostly found in **binary search**.
+### **4️⃣ O(log n) - Logarithmic Time**  
+- The input size reduces **exponentially** in each step.  
+- Mostly found in **binary search**.  
 
-✅ **Example: Binary Search**
+✅ **Example: Binary Search**  
 ```js
 function binarySearch(arr, target) {
   let left = 0, right = arr.length - 1;
@@ -89,15 +90,15 @@ function binarySearch(arr, target) {
   return -1;
 }
 ```
-**Reason:** We divide the problem **in half** each time, so it runs in **O(log n)**.
+**Reason:** We divide the problem **in half** each time, so it runs in **O(log n)**.  
 
 ---
 
-### **5️⃣ O(n log n) - Linearithmic Time**
-- Used in **efficient sorting algorithms** like **Merge Sort & Quick Sort**.
-- Slightly worse than **O(n)** but much better than **O(n²)**.
+### **5️⃣ O(n log n) - Linearithmic Time**  
+- Used in **efficient sorting algorithms** like **Merge Sort & Quick Sort**.  
+- Slightly worse than **O(n)** but much better than **O(n²)**.  
 
-✅ **Example: Merge Sort**
+✅ **Example: Merge Sort**  
 ```js
 function mergeSort(arr) {
   if (arr.length <= 1) return arr;
@@ -107,13 +108,16 @@ function mergeSort(arr) {
   return merge(left, right);
 }
 ```
-**Reason:** It splits `n` elements in half (`log n` times) and does `O(n)` work at each step.
+**Reason:** It splits `n` elements in half (`log n` times) and does `O(n)` work at each step.  
 
 ---
 
-### **Space Complexity (O(1) vs O(n))**  
-- **O(1) → Constant Space** (no extra memory used, modifies input in-place).  
-- **O(n) → Linear Space** (extra memory grows with `n`).  
+## **📌 Space Complexity (O(1) vs O(n))**  
+
+| Complexity | Description |
+|------------|------------|
+| **O(1)** | Constant Space → No extra memory used, modifies input in-place |
+| **O(n)** | Linear Space → Extra memory grows with `n` |
 
 ✅ **Example of O(1) Space:**  
 ```js
@@ -133,18 +137,21 @@ for (let i = 0; i < n; i++) {
 
 ---
 
-### **📌 Summary Table**
+## **📌 Summary Table**  
+
 | Complexity | Example | Behavior |
 |------------|---------|----------|
-| O(1) | Array indexing | Constant time |
-| O(n) | Looping through an array | Grows linearly |
-| O(n²) | Nested loops | Quadratic growth |
-| O(log n) | Binary search | Reduces input size exponentially |
-| O(n log n) | Merge Sort | Fast sorting |
+| **O(1)** | Array indexing | Constant time |
+| **O(n)** | Looping through an array | Grows linearly |
+| **O(n²)** | Nested loops | Quadratic growth |
+| **O(log n)** | Binary search | Reduces input size exponentially |
+| **O(n log n)** | Merge Sort | Fast sorting |
 
 ---
 
-### **Final Thoughts**
-- **O(1) is the fastest** and **O(n²) or worse should be avoided** if possible.
-- **Binary search is efficient (`O(log n)`)** for searching in sorted data.
-- **Sorting (`O(n log n)`) is better than brute force (`O(n²)`)**.
+## **🚀 Final Thoughts**  
+✅ **O(1) is the fastest**, while **O(n²) or worse should be avoided** if possible.  
+✅ **Binary search (`O(log n)`) is efficient** for searching in sorted data.  
+✅ **Sorting (`O(n log n)`) is better than brute force (`O(n²)`)**.  
+
+---
